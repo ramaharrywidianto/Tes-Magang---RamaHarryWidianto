@@ -33,7 +33,7 @@ const GroupList = () => {
 
       const data = response.data.response?.data || [];
       setGroups(data);
-    } catch (err) {
+    } catch  {
       setError('Failed to fetch data.');
     } finally {
       setLoading(false);
